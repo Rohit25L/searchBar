@@ -8,7 +8,7 @@ const connect = async () => {
     }
 
     try {
-        dbConnection = await mongoose.connect(process.env.DB_URL);
+        dbConnection = await mongoose.connect("mongodb+srv://kumarrohit2512003:UYcf1HEwTsniL8qh@cluster0.3v6bdcw.mongodb.net/");
         return dbConnection;
     } catch (err) {
         console.error('MongoDB Connection Error:', err);

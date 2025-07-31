@@ -4,11 +4,11 @@
   "description": "",
   "license": "ISC",
   "author": "",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky"
+    "prepare": "husky install"
   },
   "dependencies": {
     "bcryptjs": "^3.0.0",
@@ -27,7 +27,6 @@
     "@eslint/js": "^9.32.0",
     "eslint": "^9.32.0",
     "globals": "^15.15.0",
-    "husk": "^0.5.3",
     "husky": "^9.1.7",
     "jest": "^30.0.5",
     "lint-staged": "^16.1.2",
@@ -35,6 +34,6 @@
     "prettier": "^3.5.1"
   },
   "lint-staged": {
-  "*.{js,jsx,ts,tsx}": "eslint --fix"
-}
+    "*.{js,jsx,ts,tsx}": "eslint --fix"
+  }
 }
