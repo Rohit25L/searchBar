@@ -8,10 +8,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Routes
-app.use('/api', apiRoutes);
+app.use("/api", apiRoutes);
 
 app.get('/', (req, res) => {
-  res.send('API is running!');
+  res.send("API is running!","");
 });
 
 export default app; // Export for server.js
